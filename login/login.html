@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="main-page-header">
+        <span class="logo">
+            <h1 class="logo-text">HTML</h1>
+            <h2 class="creator">by Iyed & Ayoub</h2>
+        </span>
+        <nav class="nav">
+            <ul class="nav-container">
+                <a href="../index.html" class="main"><li class="nav-links">Main</li></a>
+                <a href="../about me/about-me.html" class="about-me"><li class="nav-links">about me</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div class="login-outer">
+        <div class="login">
+            <label for="name" id="first">Nom et Prenom</label>
+            <input type="text" name="nom_prenom" id="name">
+            <br>
+            <label for="cin">CIN</label>
+            <input type="password" name="cin" id="cin">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="password">Mot de passe</label>
+            <input type="password" name="mot_de_passe" id="password">
+            <br>
+            <span>Votre occupation:</span> 
+            <div class="occup">
+                <label for="etudiant">Etudiant</label>
+                <input type="checkbox" name="occupation" id="etudiant"><br>
+                <label for="homme-daffaire">homme d'affaire</label>
+                <input type="checkbox" name="occupation" id="homme-daffaire"><br>
+                <label for="employee">Employée</label>
+                <input type="checkbox" name="occupation" id="employee">
+            </div>
+            <br>
+            <span>Votre niveau:</span>
+            <select id="niveau">
+                <option value="">-----</option>
+                <option value="6eme année">6eme année</option>
+                <option value="9eme année">9eme année</option>
+                <option value="BAC">BAC</option>
+                <option value="autre">autre</option>
+            </select>
+            <br>
+            <button onclick="tester()">tester</button>
+        </div>
+    </div>
+    <footer class="footer-container">
+        <div class="sources">
+            <p>Email: IyedSlimane@gmail.com<br>Email: Ayoubwechtati@gmail.com</p>
+            <p>Sources:</p>
+            <ul>
+                <li>Mr. Walid</li>
+                <li><a class="sources-link" href="https://www.w3schools.com" target="_blank">w3schools</a></li>
+                <li><a class="sources-link" href="https://developer.mozilla.org" target="_blank">developer.mozilla</a></li>
+            </ul>
+            <p>©2022</p>
+        </div>
+        <div class="message">
+            <span class="thank-msg">Thank you for comming over!!</span>
+        </div>
+        <div class="contact">
+            <ul>
+                <a class="social-media" href="https://www.facebook.com/iyed.slimane.9" target="_blank">
+                    <li class="media"><img class="icon" src="../icons/facebook.png" alt="facebook"><aside class="social">Iyed Slimane</aside></li>
+                </a>
+                <a class="social-media" href="https://www.instagram.com/iyed_6/?hl=fr" target="_blank">
+                    <li class="media"><img class="icon" src="../icons/instagram.png" alt="instagram"><aside class="social">iyed_6</aside></li>
+                </a>
+                <a class="social-media" href="https://twitter.com" target="_blank">
+                    <li class="media"><img class="icon" src="../icons/twitter.png" alt="twitter"><aside class="social">Iyed_Slimane</aside></li>
+                </a>
+            </ul>
+        </div>
+</footer>
+    <script src="login.js"></script>
+</body>
+</html>

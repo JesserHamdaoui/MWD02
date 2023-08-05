@@ -1,0 +1,253 @@
+/* TEMPLATE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@font-face {
+    font-family: 'main';
+    src: url(../../fonts/roboto.light.ttf);
+}@font-face {
+    font-family: 'bold';
+    src: url(../../fonts/theboldfont.ttf);
+}
+@font-face {
+    font-family: 'sign';
+    src: url(../../fonts/Creattion\ Demo.otf);
+}
+@font-face {
+    font-family: 'bold2';
+    src: url(../../fonts/big_noodle_titling.ttf);
+}
+
+@keyframes nav-slide {
+    from {
+        height: 25px;
+    }
+
+    to {
+        height: 35px;
+    }
+}
+
+body{
+    background-color: #f6f6f6;
+    font-family: 'main', sans-serif;
+}
+
+.main-page-header{
+    position: relative;
+    top: -10px;
+    right: 10px;
+    padding: 0 9px;
+    bottom: 50px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, #051937, #0c214b, #19295f, #293173, #3d3787);
+}
+
+.logo{
+    margin-top: 80px;
+}
+
+.logo-text{
+    font-size: 150px;
+    font-family: 'bold', sans-serif;
+    color: rgb(246, 246, 246);
+    font-weight: 900;
+    text-align: right;
+    text-shadow: 0px 8px 0px rgba(100, 89, 170, 0.77);
+}
+
+.creator {
+    font-size: 40px;
+    font-family: "sign";
+    color: rgba(157, 149, 211, 0.77);
+    position: relative;
+    text-align: right;
+    top: -230px;
+    left: 30px;
+  }
+  
+
+.nav-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.main{
+    text-decoration: none;
+    position: absolute;
+    bottom: -16px;
+    margin-right:10px;
+    height: 35px;
+    width: 100px;
+    border-radius: 1em 1em 0 0;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+.main{
+    animation-duration: 0.8s;
+    animation-name: nav-slide;
+}
+
+.about-me{
+    text-decoration: none;
+    position: absolute;
+    bottom: -16px;
+    left: 150px;
+    margin-right:10px;
+    height: 25px;
+    width: 100px;
+    border-radius: 1em 1em 0 0;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+.nav-links {
+    font-family: 'bold2';
+    font-size: 20px;
+    font-style: none;
+    list-style: none;
+    color: rgba(71, 60, 140, 0.77);
+    transform: translateY(15%);
+}
+
+.about-me:hover{
+    background-color: rgba(121, 112, 177, 0.77);
+    
+}
+
+.about-me:hover .nav-links{
+    color: #f6f6f6;
+}
+
+
+.footer-container{
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    bottom: -10px;
+    right: 10px;
+    padding: 0 9px;
+    padding-top: 10px;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to right top, #051937, #0c214b, #19295f, #293173, #3d3787);;
+    color: #f6f6f6;
+}
+
+.sources{
+    width: 30%;
+}
+
+.sources-link{
+    text-decoration: none;
+    color: #f6f6f6;
+}
+
+.thank-msg{
+    color: #f6f6f6;
+    font-family: 'bold', sans-serif;
+    font-size: 300%;
+}
+.message {
+    text-align: center;
+    width: 40%;
+}
+
+.contact{
+    padding-left: 10%;
+}
+
+.icon{
+    width: 24px;
+}
+
+.social-media{
+    color: #f6f6f6;
+    text-decoration: none;
+    
+}
+
+.media{
+    list-style: none;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    display: inline;
+    padding-left: 10px;
+}
+
+body::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #3d3787;
+    background-image: -webkit-linear-gradient(45deg,
+    rgba(255, 255, 255, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .2) 50%,
+    rgba(255, 255, 255, .2) 75%,
+    transparent 75%,
+    transparent)
+}
+
+/* SPECIAL FOR THIS PAGE */
+
+.courses {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #d1d3e7;
+    height: auto;
+}
+
+h2{
+    font-family: bold;
+    color: #0c214b;
+}
+
+h3{
+    font-family: bold;
+    color: #19295f;
+}
+
+h4{
+    font-family: bold;
+    color: #293173;
+}
+
+#titre{
+    text-decoration: underline;
+    color: #051937;
+    font-family: bold;
+}
+
+td{
+    padding: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: #777688;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basics.css">
+    <title>HTML Course by Iyed & Ayoub - main page</title>
+</head>
+<body>
+    <header class="main-page-header">
+        <span class="logo">
+            <h1 class="logo-text">HTML</h1>
+            <h2 class="creator">by Iyed & Ayoub</h2>
+        </span>
+        <nav class="nav">
+            <ul class="nav-container">
+                <a href="../../index.html" class="main"><li class="nav-links">Main</li></a>
+                <a href="../../about me/about-me.html" class="about-me"><li class="nav-links">about me</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="courses">
+            <h1 id="titre">BASIC HTML</h1>
+            <h2>I. Les balises et leurs attributs :</h2>
+            <p>
+            Il ne suffit pas d'écrire simplement du texte dans l'éditeur, il faut aussi donner des
+instructions à l'ordinateur. En HTML, on utilise pour cela des balises. Celles-ci sont
+invisibles à l'écran pour vos visiteurs, mais elles permettent à l'ordinateur de
+comprendre ce qu'il doit afficher. Elles sont entourées de "chevrons", c'est-à-dire
+des symboles &#60 et &#62, comme ceci :<balise>
+            </p>
+            <h3>1. Types de balises</h3>
+            <p>
+                On distingue deux types de balises : les balises en paires et les balises orphelines.
+            </p>
+            <ul>
+                <li>
+                    <h4>Les balises en paires</h4>
+                    <p>Elles s'ouvrent, contiennent du texte, et se ferment plus loin. Voici à quoi
+                        elles ressemblent : <strong>&#60h1&#62 Ceci est un titre&#60/h1&#62</strong></p>
+                </li>
+                <li>
+                    <h4>Les balises orphelines</h4>
+                    <p>
+                        Ce sont des balises qui servent le plus souvent à insérer un élément à un
+endroit précis (par exemple une image).
+<br/>
+Une balise orpheline s'écrit comme ceci : <strong>&#60img /&#62</strong>
+                    </p>
+                </li>
+            </ul>
+            <h3>2. Les attributs</h3>
+            <p>
+                Les attributs sont un peu les options des balises. Ils viennent les compléter pour
+donner des informations supplémentaires. L'attribut se place après le nom de la
+balise ouvrante et a le plus souvent une valeur, comme ceci : <strong>&#60balise attribut =
+    "valeur"&#62</strong>
+<br /><br/>
+Prenons la balise <strong>&#60img /&#62</strong> que nous venons de voir. Seule, elle ne sert pas à
+grand-chose. On pourrait rajouter un attribut qui indique le nom de l'image à
+afficher : <strong>&#60img src = "photo.jpg" /&#62</strong>
+            </p>
+            <br/>
+            <h2>II. Structure de base d'une page HTML5</h2>
+            <h3>1. Le doctype</h3>
+            <p>
+                Cette ligne du doctype était autrefois incroyablement complexe. Il était
+impossible de la retenir de tête. Pour XHTML 1.0, il fallait écrire : <strong>&#60!DOCTYPE
+    html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&#62</strong>.
+Dans le cadre de HTML5, il a été décidé de la simplifier, pour le plus grand
+bonheur des webmasters. Quand vous voyez une balise doctype courte
+<strong>&#60!DOCTYPE html&#62</strong> cela signifie que la page est écrite en HTML5.
+            </p>
+            <h3>2. La balise <strong>&#60html&#62</strong></h3>
+            <p>
+                C'est la balise principale du code. Elle englobe tout le contenu de votre page.
+Comme vous pouvez le voir, la balise fermante <strong>&#60/html&#62</strong> se trouve tout à la fin du
+code !
+            </p>
+            <h3>3. L'en-tête <strong>&#60head&#62</strong> et le corps <strong>&#60body&#62</strong></h3>
+            <p>Une page web est constituée de deux parties :</p>
+            <ul>
+                <li><p>L'en-tête : cette section donne quelques informations générales sur la page
+                    comme son titre, l’encodage, etc.</p></li>
+                    <li><p>Le corps : c'est là que se trouve la partie principale de la page. Tout ce que
+                        nous écrirons ici sera affiché à l'écran.</p></li>
+            </ul>
+            <h3>4. L'encodage (charset)</h3>
+            <h4>&#60meta charset="utf-8" /&#62</h4>
+            <p>
+                Cette balise indique l'encodage utilisé dans votre fichier <strong>.html</strong>.
+                <br/>
+                L'encodage indique la façon dont le fichier est enregistré. C'est lui qui détermine
+comment les caractères spéciaux vont s'afficher (accents, idéogrammes chinois
+et japonais, caractères arabes, etc.).
+            </p>
+            <h3>5. Le titre principal de la page <strong>&#60title&#62</strong></h3>
+            <p>
+                C'est le titre de votre page, toute page doit avoir un titre qui décrit ce qu'elle
+contient. Il est conseillé de garder le titre assez court (moins de 100 caractères
+en général).
+            </p>
+            <h3>6. Les commentaires</h3>
+            <h4>&#60!-- Ceci est un commentaire --&#62</h4>
+            <p>
+                Un commentaire en HTML est un texte qui sert simplement de mémo. Il n'est
+pas affiché, il n'est pas lu par l'ordinateur, cela ne change rien à l'affichage de la
+page.
+            </p>
+            <br/>
+            <h2>III. Les types des balises</h2>
+            <table>
+                <tr>
+                    <td>h1, h2, h3, h4, h5, h6</td>
+                    <td>Crée des titres, on a le droit d'utiliser six niveaux de
+                        titres différents de h1 à h6
+                        </td>
+                </tr>
+                <tr>
+                    <td>&#60p&#62 paragraphe &#60/p&#62</td>
+                    <td>Délimiter les paragraphes.</td>
+                </tr>
+                <tr>
+                    <td>&#60em&#62 text &#60/em&#62</td>
+                    <td>Mettre un peu en valeur (emphase faible) un texte</td>
+                </tr>
+                <tr>
+                    <td>&#60strongm&#62 text &#60/strong&#62</td>
+                    <td>Mettre bien en valeur (emphase forte) un texte
+                    </td>
+                </tr>
+                <tr>
+                    <td>&#60mark&#62 text &#60/mark&#62</td>
+                    <td>Permet de faire ressortir visuellement un texte.</td>
+                </tr>
+                <tr>
+                    <td>&#60a href="#id"&#62 text &#60/a&#62</td>
+                    <td>crée un lien interne</td>
+                </tr>
+                <tr>
+                    <td>&#60a href="https://www.lien.com"&#62 text &#60/a&#62</td>
+                    <td>crée un lien externe</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer class="footer-container">
+            <div class="sources">
+                <p>Email: IyedSlimane@gmail.com<br>Email: Ayoubwechtati@gmail.com</p>
+                <p>Sources:</p>
+                <ul>
+                    <li>Mr. Walid</li>
+                    <li><a class="sources-link" href="https://www.w3schools.com" target="_blank">w3schools</a></li>
+                    <li><a class="sources-link" href="https://developer.mozilla.org" target="_blank">developer.mozilla</a></li>
+                </ul>
+                <p>©2022</p>
+            </div>
+            <div class="message">
+                <span class="thank-msg">Thank you for comming over!!</span>
+            </div>
+            <div class="contact">
+                <ul>
+                    <a class="social-media" href="https://www.facebook.com/iyed.slimane.9" target="_blank">
+                        <li class="media"><img class="icon" src="../../icons/facebook.png" alt="facebook"><aside class="social">Iyed Slimane</aside></li>
+                    </a>
+                    <a class="social-media" href="https://www.instagram.com/iyed_6/?hl=fr" target="_blank">
+                        <li class="media"><img class="icon" src="../../icons/instagram.png" alt="instagram"><aside class="social">iyed_6</aside></li>
+                    </a>
+                    <a class="social-media" href="https://twitter.com" target="_blank">
+                        <li class="media"><img class="icon" src="../../icons/twitter.png" alt="twitter"><aside class="social">Iyed_Slimane</aside></li>
+                    </a>
+                </ul>
+            </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
